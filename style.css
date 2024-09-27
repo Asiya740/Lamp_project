@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(43, 43,43);
+    font-family: "poppins" sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 60%;
+    height: 80%;
+    background: #131314;
+}
+
+header nav{
+    width: 90%;
+    height: 15%;
+   /* border: 2px solid rgb(245, 245, 229); */
+    margin: auto;
+    color: #efe68b;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-shadow: 0px 0px 0px 10px #818181;
+}
+
+header nav .left .fa-sun{
+    font-size: 25px;
+    animation: sun 3s linear infinite;
+}
+
+@keyframes sun {
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(460deg);
+    }
+}
+
+header nav .right .fa-heart {
+  margin-right: 15px;
+}
+
+header section{
+    width: 90%;
+    height: 85%;
+   /* border: 2px solid rgb(239, 237, 237); */
+    margin: auto;
+    display: flex;
+}
+
+header section .lefts , .rights{
+    width: 60%;
+    height: 100%;
+    /*border: 1px solid white; */
+    overflow: hidden;
+}
+
+header section .lefts {
+    position: relative;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header section .lefts img{
+    position: absolute;
+    width: 450px ;
+    height: 500px;
+    transition: all 6s ease-in-out;
+}
+header section .rights{
+    padding: 50px 0px 0px 60px;
+    color: #fffac4;  
+}
+header section .rights h1{
+    font-size: 45px;
+    line-height: 55px;
+    margin-left: -5;
+}
+
+header section .rights h6{
+    font-size: 13px;
+}
+
+header section .rights .price{
+    width: 250px;
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+header section  .rights .price2{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header section  .rights .price2 h6{
+   position: relative;
+   width: 100px;
+   height: 30px;
+   background-color: aliceblue;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #ede484;
+   padding: 0px 5px;
+   margin-top: 5px;
+   
+}
+
+header section  .rights .price2 h6 .fa-solid{
+    padding: 5px 4px;
+    box-shadow: 0px 0px 6px #dbd057;
+    border-radius: 20px;
+}
+header section .rights .price2 h6 span{
+    color: #ebdf62;
+}
+
+header section .rights .color{
+    display: flex;
+    margin: 10px 0px;
+}
+
+header section .rights .color h4{
+     padding: 5px;
+     margin-right: 15px;
+     background: rgb(210, 222, 104);
+     border-radius: 50%;
+     box-shadow: 0px 0px 10px #ebe390;
+     cursor: pointer;
+}
+
+header section .rights .color h4:nth-child(2){
+    background: rgb(119 , 226 ,105);
+    box-shadow: 0px 0px 10px #99ed88;
+    
+}
+
+header section .rights .color h4:nth-child(3){
+    background: #65e1e6;
+    box-shadow: 0px 0px 10px #93eef1;
+    
+}
+
+header section .rights .color h4:nth-child(4){
+    background: rgb(226 , 105 ,216);
+    box-shadow: 0px 0px 10px #eb90e7;
+    
+}
+
+header section .rights p{
+    font-size: 13px;
+    word-break: break-all;
+    color: #fcf6cc;
+    margin-top: 10px;
+}
+
+header section .rights .cart{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #fcf6cc;
+}
+
+header section .rights .cart h4 span {
+    font-size: 19px;
+    line-height: 22px;
+
+}
+
+header section .rights .cart button{
+    padding:  8px  0px;
+    width: 155px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: rgb(240, 240, 238);
+    color: #fdee4a;
+    box-shadow: 0px 0px 10px #ebe390;
+}
+
+header section .rights .cart button .fa-bag-shopping{
+   margin-right: 12px;
+   
+}
+
